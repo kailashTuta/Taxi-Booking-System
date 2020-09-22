@@ -54,11 +54,12 @@ class Customer implements Passenger{
         this.destination = destination;
     }
 
-    public void display(){
-        System.out.println("Name:"+this.name);
-        System.out.println("Email Id:"+this.email);
-        System.out.println("Mobile:"+this.mobile);
-        System.out.println("Pickup:"+this.pickUp);
-        System.out.println("Destination:"+this.destination);
+    public void display(){}
+
+
+    @Override
+    public String toString() {
+        return "\n"+"Name:"+getName()+"\n"+"Email:"+getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination();
     }
+
 }
