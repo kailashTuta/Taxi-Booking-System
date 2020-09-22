@@ -14,11 +14,18 @@ class Main{
 
         Integer choice = Integer.parseInt(br.readLine());
 
-        System.out.println("Enter the details in CSV format:");
-        String details = br.readLine();
-        String[] d = details.split(",");
+        System.out.println('Enter no of Passengers');
+        Integer n = Integer.parseInt(br.readLine());
+        if (n<=3)
+        {
+          for (int i =0;i<=n ;i++ ) {
+            System.out.println("Enter the details in CSV format:");
+            String details = br.readLine();
+            String[] d = details.split(",");
 
-        list.add(new Customer(d[0],d[1],d[2],d[3],d[4]));
+            list.add(new Customer(d[0],d[1],d[2],d[3],d[4]));
+          }
+        }
 
         if (choice == 1){
             for (Customer itr:list ){
