@@ -13,7 +13,7 @@ class Main{
         System.out.println("4.PrimeSedan");
 
         Integer choice = Integer.parseInt(br.readLine());
-
+        
         System.out.println("Enter no of Passengers");
         Integer n = Integer.parseInt(br.readLine());
         if (n<=3)
@@ -31,33 +31,39 @@ class Main{
           System.out.println("Three Passengers Only");
         }
 
-        if (choice == 1){
-            for (Customer itr:list ){
-                System.out.println(itr);
-            }
-            Taxi t = new Mini();
-            System.out.println("Fare:"+t.fare());
+        if (choice <= 4){
+          if (choice == 1){
+              for (Customer itr:list ){
+                  System.out.println(itr);
+              }
+              Taxi t = new Mini();
+              System.out.println("Fare:"+t.fare());
+          }
+          else if (choice == 2){
+              for (Customer itr:list ){
+                  System.out.println(itr);
+              }
+              Taxi t = new Micro();
+              System.out.println("Fare:"+t.fare());
+          }
+          else if (choice == 3){
+              for (Customer itr:list ){
+                  System.out.println(itr);
+              }
+              Taxi t = new Sedan();
+              System.out.println("Fare:"+t.fare());
+          }
+          else if (choice == 4){
+              for (Customer itr:list ){
+                  System.out.println(itr);
+              }
+              Taxi t = new PrimeSedan();
+              System.out.println("Fare:"+t.fare());
+          }
         }
-        else if (choice == 2){
-            for (Customer itr:list ){
-                System.out.println(itr);
-            }
-            Taxi t = new Micro();
-            System.out.println("Fare:"+t.fare());
-        }
-        else if (choice == 3){
-            for (Customer itr:list ){
-                System.out.println(itr);
-            }
-            Taxi t = new Sedan();
-            System.out.println("Fare:"+t.fare());
-        }
-        else if (choice == 4){
-            for (Customer itr:list ){
-                System.out.println(itr);
-            }
-            Taxi t = new PrimeSedan();
-            System.out.println("Fare:"+t.fare());
-        }
+      else {
+        System.out.println("Invalid Option");
+      }
+
     }
 }
