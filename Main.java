@@ -1,10 +1,10 @@
 import java.io.*;
 import java.util.*;
 
-class Main{
-    public static void main(String[] args) throws Exception{
+class Main {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Customer> list = new ArrayList<Customer>();
+        ArrayList < Customer > list = new ArrayList < Customer > ();
 
         System.out.println("Enter Your Choice");
         System.out.println("1.Mini");
@@ -13,57 +13,93 @@ class Main{
         System.out.println("4.PrimeSedan");
 
         Integer choice = Integer.parseInt(br.readLine());
-        
-        System.out.println("Enter no of Passengers");
-        Integer n = Integer.parseInt(br.readLine());
-        if (n<=3)
-        {
-          for (int i =1;i<=n ;i++ ) {
-            System.out.println("Enter the details in CSV format:");
-            String details = br.readLine();
-            String[] d = details.split(",");
 
-            list.add(new Customer(d[0],d[1],d[2],d[3],d[4]));
-          }
-        }
-        else
-        {
-          System.out.println("Three Passengers Only");
-        }
+        if (choice <= 4) {
 
-        if (choice <= 4){
-          if (choice == 1){
-              for (Customer itr:list ){
-                  System.out.println(itr);
-              }
-              Taxi t = new Mini();
-              System.out.println("Fare:"+t.fare());
-          }
-          else if (choice == 2){
-              for (Customer itr:list ){
-                  System.out.println(itr);
-              }
-              Taxi t = new Micro();
-              System.out.println("Fare:"+t.fare());
-          }
-          else if (choice == 3){
-              for (Customer itr:list ){
-                  System.out.println(itr);
-              }
-              Taxi t = new Sedan();
-              System.out.println("Fare:"+t.fare());
-          }
-          else if (choice == 4){
-              for (Customer itr:list ){
-                  System.out.println(itr);
-              }
-              Taxi t = new PrimeSedan();
-              System.out.println("Fare:"+t.fare());
-          }
+            if (choice == 1) {
+                System.out.println("Enter no of Passengers");
+                Integer n = Integer.parseInt(br.readLine());
+                if (n <= 3) {
+                    for (int i = 1; i <= n; i++) {
+                        System.out.println("Enter the details in CSV format:");
+                        String details = br.readLine();
+                        String[] d = details.split(",");
+
+                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                    }
+                    for (Customer itr: list) {
+                        System.out.println(itr);
+                    }
+                    Taxi t = new Mini();
+                    System.out.println("Fare:" + t.fare());
+                } else {
+                    System.out.println("Three Passengers Only");
+                }
+
+            } else if (choice == 2) {
+                System.out.println("Enter no of Passengers");
+                Integer n = Integer.parseInt(br.readLine());
+                if (n <= 3) {
+                    for (int i = 1; i <= n; i++) {
+                        System.out.println("Enter the details in CSV format:");
+                        String details = br.readLine();
+                        String[] d = details.split(",");
+
+                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                    }
+                    for (Customer itr: list) {
+                        System.out.println(itr);
+                    }
+                    Taxi t = new Micro();
+                    System.out.println("Fare:" + t.fare());
+                } else {
+                    System.out.println("Three Passengers Only");
+                }
+            } else if (choice == 3) {
+                System.out.println("Enter no of Passengers");
+                Integer n = Integer.parseInt(br.readLine());
+                if (n <= 3) {
+                    for (int i = 1; i <= n; i++) {
+                        System.out.println("Enter the details in CSV format:");
+                        String details = br.readLine();
+                        String[] d = details.split(",");
+
+                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                    }
+                    for (Customer itr: list) {
+                        System.out.println(itr);
+                    }
+                    Taxi t = new Sedan();
+                    System.out.println("Fare:" + t.fare());
+                } else {
+                    System.out.println("Three Passengers Only");
+                }
+
+            } else if (choice == 4) {
+                System.out.println("Enter no of Passengers");
+                Integer n = Integer.parseInt(br.readLine());
+                if (n <= 3) {
+                    for (int i = 1; i <= n; i++) {
+                        System.out.println("Enter the details in CSV format:");
+                        String details = br.readLine();
+                        String[] d = details.split(",");
+
+                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                    }
+                    for (Customer itr: list) {
+                        System.out.println(itr);
+                    }
+                    Taxi t = new PrimeSedan();
+                    System.out.println("Fare:" + t.fare());
+                } else {
+                    System.out.println("Three Passengers Only");
+                }
+
+            }
+
+        } else {
+            System.out.println("Invalid Option");
         }
-      else {
-        System.out.println("Invalid Option");
-      }
 
     }
 }
