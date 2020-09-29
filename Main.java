@@ -21,11 +21,18 @@ class Main {
                 Integer n = Integer.parseInt(br.readLine());
                 if (n <= 3) {
                     for (int i = 1; i <= n; i++) {
-                        System.out.println("Enter the details in CSV format:");
-                        String details = br.readLine();
-                        String[] d = details.split(",");
+                        System.out.println("Enter Your Name:");
+                        String name = br.readLine();
+                        System.out.println("Enter Your Email:");
+                        String email = br.readLine();
+                        System.out.println("Enter Your Mobile Number:");
+                        String mobile = br.readLine();
+                        System.out.println("Enter Your Pickup Point:");
+                        String pickup = br.readLine();
+                        System.out.println("Enter Your Drop Point:");
+                        String drop = br.readLine();
 
-                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                        list.add(new Customer(name,email,mobile,pickup,drop));
                     }
                     for (Customer itr: list) {
                         System.out.println(itr);
@@ -41,11 +48,18 @@ class Main {
                 Integer n = Integer.parseInt(br.readLine());
                 if (n <= 3) {
                     for (int i = 1; i <= n; i++) {
-                        System.out.println("Enter the details in CSV format:");
-                        String details = br.readLine();
-                        String[] d = details.split(",");
+                      System.out.println("Enter Your Name:");
+                      String name = br.readLine();
+                      System.out.println("Enter Your Email:");
+                      String email = br.readLine();
+                      System.out.println("Enter Your Mobile Number:");
+                      String mobile = br.readLine();
+                      System.out.println("Enter Your Pickup Point:");
+                      String pickup = br.readLine();
+                      System.out.println("Enter Your Drop Point:");
+                      String drop = br.readLine();
 
-                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                      list.add(new Customer(name,email,mobile,pickup,drop));
                     }
                     for (Customer itr: list) {
                         System.out.println(itr);
@@ -60,11 +74,18 @@ class Main {
                 Integer n = Integer.parseInt(br.readLine());
                 if (n <= 3) {
                     for (int i = 1; i <= n; i++) {
-                        System.out.println("Enter the details in CSV format:");
-                        String details = br.readLine();
-                        String[] d = details.split(",");
+                      System.out.println("Enter Your Name:");
+                      String name = br.readLine();
+                      System.out.println("Enter Your Email:");
+                      String email = br.readLine();
+                      System.out.println("Enter Your Mobile Number:");
+                      String mobile = br.readLine();
+                      System.out.println("Enter Your Pickup Point:");
+                      String pickup = br.readLine();
+                      System.out.println("Enter Your Drop Point:");
+                      String drop = br.readLine();
 
-                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                      list.add(new Customer(name,email,mobile,pickup,drop));
                     }
                     for (Customer itr: list) {
                         System.out.println(itr);
@@ -80,11 +101,18 @@ class Main {
                 Integer n = Integer.parseInt(br.readLine());
                 if (n <= 3) {
                     for (int i = 1; i <= n; i++) {
-                        System.out.println("Enter the details in CSV format:");
-                        String details = br.readLine();
-                        String[] d = details.split(",");
+                      System.out.println("Enter Your Name:");
+                      String name = br.readLine();
+                      System.out.println("Enter Your Email:");
+                      String email = br.readLine();
+                      System.out.println("Enter Your Mobile Number:");
+                      String mobile = br.readLine();
+                      System.out.println("Enter Your Pickup Point:");
+                      String pickup = br.readLine();
+                      System.out.println("Enter Your Drop Point:");
+                      String drop = br.readLine();
 
-                        list.add(new Customer(d[0], d[1], d[2], d[3], d[4]));
+                      list.add(new Customer(name,email,mobile,pickup,drop));
                     }
                     for (Customer itr: list) {
                         System.out.println(itr);
