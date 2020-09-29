@@ -27,6 +27,8 @@ class Main {
                         String email = br.readLine();
                         System.out.println("Enter Your Mobile Number:");
                         String mobile = br.readLine();
+                        Validate v = new Validate(mobile,email);
+                        v.validateMobile(mobile);
                         System.out.println("Enter Your Pickup Point:");
                         String pickup = br.readLine();
                         System.out.println("Enter Your Drop Point:");
