@@ -34,12 +34,10 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
-                            System.out.println("Enter Your Pickup Point:");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String drop = br.readLine();
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
@@ -74,11 +72,10 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
-                            System.out.println("Enter Your Pickup Point:");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
                             String drop = br.readLine();
 
                             Date date = new Date();
@@ -112,12 +109,10 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
-                            System.out.println("Enter Your Pickup Point:");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String drop = br.readLine();
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
 
 
 
@@ -154,12 +149,10 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
-                            System.out.println("Enter Your Pickup Point:");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");
-                            System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
-                            String drop = br.readLine();
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
