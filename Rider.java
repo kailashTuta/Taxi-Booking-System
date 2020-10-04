@@ -1,16 +1,17 @@
 class Rider implements Passenger{
-    private String name,email,mobile,pickUp,destination,date;
+    private String name,email,mobile,pickUp,destination,date,fare;
 
     public Rider() {
     }
 
-    public Rider(String date, String name, String email, String mobile, String pickUp, String destination) {
+    public Rider(String date, String name, String email, String mobile, String pickUp, String destination, String fare ) {
         this.date = date;
         this.name = name;
         this.email = email;
         this.mobile = mobile;
         this.pickUp = pickUp;
         this.destination = destination;
+        this.fare = fare;
     }
 
     public String getDate() {
@@ -61,12 +62,22 @@ class Rider implements Passenger{
         this.destination = destination;
     }
 
+    public String getFare() {
+        return this.fare;
+    }
+
+    public void setFare(String fare) {
+        this.fare = fare;
+    }
+
+
     public void display(){}
 
 
     @Override
     public String toString() {
-        return "\n"+"Date:"+getDate()+"\n"+"Name:"+getName()+"\n"+"Email:"+getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination();
+        return "\n"+"Date:"+getDate()+"\n"+"Name:"+getName()+"\n"+"Email:"+
+        getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination()+"\n"+"Fare:"+getFare();
     }
 
 }

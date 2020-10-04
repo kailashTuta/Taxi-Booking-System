@@ -40,20 +40,19 @@ class BookRide {
                             System.out.println("Select Your Drop Point");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String drop = br.readLine();
-                            if(pickup == drop){
-                                System.exit(0);
-                            }
+
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
                             String strDate = formatter.format(date);
 
-                            list.add(new Rider(strDate, name, email, mobile, pickup, drop));
+                            Taxi t = new Mini();
+                            String fare = Integer.toString(t.fare());
+                            list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
                         }
-                        Taxi t = new Mini();
-                        System.out.println("Fare:" + t.fare());
+
                     } else {
                         System.out.println("Three Passengers Only");
                     }
@@ -74,25 +73,21 @@ class BookRide {
                             System.out.println("Enter Your Pickup Point:");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");                          
+                            System.out.println("Select Your Drop Point");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String drop = br.readLine();
-                            if(pickup == drop){
-                                System.exit(0);
-                            }
- 
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
                             String strDate = formatter.format(date);
 
-                            list.add(new Rider(strDate, name, email, mobile, pickup, drop));
+                            Taxi t = new Micro();
+                            String fare = Integer.toString(t.fare());
+                            list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
                         }
-                        Taxi t = new Micro();
-                        System.out.println("Fare:" + t.fare());
                     } else {
                         System.out.println("Three Passengers Only");
                     }
@@ -112,25 +107,24 @@ class BookRide {
                             System.out.println("Enter Your Pickup Point:");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point"); 
+                            System.out.println("Select Your Drop Point");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String drop = br.readLine();
-                            if(pickup == drop){
-                                System.exit(0);
-                            }
- 
+
+
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
                             String strDate = formatter.format(date);
 
-                            list.add(new Rider(strDate, name, email, mobile, pickup, drop));
+                            Taxi t = new Sedan();
+                            String fare = Integer.toString(t.fare());
+                            list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
                         }
-                        Taxi t = new Sedan();
-                        System.out.println("Fare:" + t.fare());
+
                     } else {
                         System.out.println("Three Passengers Only");
                     }
@@ -151,25 +145,21 @@ class BookRide {
                             System.out.println("Enter Your Pickup Point:");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point");                            
+                            System.out.println("Select Your Drop Point");
                             System.out.println("Air Port\nBus Station\nRailway Station\nMovie Theatre\nRestraunt");
                             String drop = br.readLine();
-                            if(pickup == drop){
-                                System.exit(0);
-                            }
- 
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
                             String strDate = formatter.format(date);
 
-                            list.add(new Rider(strDate, name, email, mobile, pickup, drop));
+                            Taxi t = new PrimeSedan();
+                            String fare = Integer.toString(t.fare());
+                            list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
                         }
-                        Taxi t = new PrimeSedan();
-                        System.out.println("Fare:" + t.fare());
                     } else {
                         System.out.println("Three Passengers Only");
                     }
