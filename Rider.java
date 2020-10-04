@@ -1,11 +1,11 @@
-class Customer implements Passenger{
-    private String name,email,mobile,pickUp,destination;
+class Rider implements Passenger{
+    private String name,email,mobile,pickUp,destination,date;
 
-
-    public Customer() {
+    public Rider() {
     }
 
-    public Customer(String name, String email, String mobile, String pickUp, String destination) {
+    public Rider(String date, String name, String email, String mobile, String pickUp, String destination) {
+        this.date = date;
         this.name = name;
         this.email = email;
         this.mobile = mobile;
@@ -13,6 +13,13 @@ class Customer implements Passenger{
         this.destination = destination;
     }
 
+    public String getDate() {
+        return this.date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getName() {
         return this.name;
@@ -59,7 +66,7 @@ class Customer implements Passenger{
 
     @Override
     public String toString() {
-        return "\n"+"Name:"+getName()+"\n"+"Email:"+getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination();
+        return "\n"+"Date:"+getDate()+"\n"+"Name:"+getName()+"\n"+"Email:"+getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination();
     }
 
 }
