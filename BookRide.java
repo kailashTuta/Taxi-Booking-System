@@ -34,6 +34,8 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
+
+                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
@@ -72,6 +74,7 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
+                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
@@ -109,6 +112,7 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
+                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
@@ -149,6 +153,7 @@ class BookRide {
                             String mobile = br.readLine();
                             Validate v = new Validate(mobile, email);
                             v.validateMobile(mobile);
+                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");

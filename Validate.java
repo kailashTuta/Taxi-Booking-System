@@ -16,4 +16,14 @@ public class Validate {
     }
 
   }
+
+  public void validateEmail(String email){
+    if(email.matches("^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$")){
+      System.out.println("Email is valid");
+    }
+    else{
+      System.out.println("Email is not valid");
+      System.exit(0);
+    }
+  }
 }
