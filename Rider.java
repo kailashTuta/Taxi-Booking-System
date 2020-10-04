@@ -1,4 +1,5 @@
-class Rider implements Passenger{
+import java.io.*;
+class Rider implements Serializable{
     private String name,email,mobile,pickUp,destination,date,fare;
 
     public Rider() {
@@ -70,14 +71,11 @@ class Rider implements Passenger{
         this.fare = fare;
     }
 
-
-    public void display(){}
-
-
     @Override
     public String toString() {
         return "\n"+"Date:"+getDate()+"\n"+"Name:"+getName()+"\n"+"Email:"+
-        getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+"Drop:"+getDestination()+"\n"+"Fare:"+getFare();
+        getEmail()+"\n"+"Mobile:"+getMobile()+"\n"+"Pickup:"+getPickUp()+"\n"+
+        "Drop:"+getDestination()+"\n"+"Fare:"+getFare();
     }
 
 }

@@ -48,6 +48,10 @@ class BookRide {
                             Taxi t = new Mini();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("f.txt"));  
+                            out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            out.flush();
+                            out.close();
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
@@ -84,6 +88,10 @@ class BookRide {
                             Taxi t = new Micro();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("f.txt"));  
+                            out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            out.flush();
+                            out.close();
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
@@ -120,6 +128,10 @@ class BookRide {
                             Taxi t = new Sedan();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("f.txt"));  
+                            out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            out.flush();
+                            out.close();
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
@@ -156,6 +168,10 @@ class BookRide {
                             Taxi t = new PrimeSedan();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("f.txt"));  
+                            out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+                            out.flush();
+                            out.close();
                         }
                         for (Rider itr: list) {
                             System.out.println(itr);
