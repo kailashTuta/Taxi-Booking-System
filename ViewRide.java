@@ -8,7 +8,7 @@ class ViewRide{
     public void rideView(){
         try {
 
-            ObjectInputStream in=new ObjectInputStream(new FileInputStream("f.txt"));  
+            ObjectInputStream in=new ObjectInputStream(new FileInputStream("details.txt"));  
             Rider r=(Rider)in.readObject(); 
     
             System.out.println("Date:"+r.getDate()+"\n");
