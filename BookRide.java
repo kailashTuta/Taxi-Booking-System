@@ -33,10 +33,10 @@ class BookRide {
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");   
-                            String pickup = br.readLine();                        
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");
+                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
                             String drop = br.readLine();
 
                             Validate v = new Validate(mobile, email, pickup, drop);
@@ -52,7 +52,7 @@ class BookRide {
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
 
-                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
                             out.close();
@@ -77,7 +77,7 @@ class BookRide {
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");
                             String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
@@ -96,7 +96,7 @@ class BookRide {
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
 
-                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
                             out.close();
@@ -119,10 +119,10 @@ class BookRide {
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");  
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");
                             String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
                             String drop = br.readLine();
 
                             Validate v = new Validate(mobile, email, pickup, drop);
@@ -138,7 +138,7 @@ class BookRide {
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
 
-                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
                             out.close();
@@ -163,10 +163,10 @@ class BookRide {
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");
                             String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
                             String drop = br.readLine();
 
                             Validate v = new Validate(mobile, email, pickup, drop);
@@ -181,7 +181,7 @@ class BookRide {
                             Taxi t = new PrimeSedan();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
-                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
+                            ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
                             out.close();

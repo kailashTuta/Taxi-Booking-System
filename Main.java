@@ -21,7 +21,7 @@ class Main {
                 File newFile = new File("details.txt");
 
                 if (newFile.length() == 0) {
-                    System.out.println("You Didn't have any rides to show");
+                    System.out.println("You Didn't have any rides to show\n");
                 } else {
                     System.out.println("Your Ride details\n");
                     v.rideView();
