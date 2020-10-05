@@ -32,14 +32,17 @@ class BookRide {
                             String email = br.readLine();
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
-                            Validate v = new Validate(mobile, email);
-                            v.validateMobile(mobile);
-
-                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");   
+                            String pickup = br.readLine();                        
                             System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            String drop = br.readLine();
+
+                            Validate v = new Validate(mobile, email, pickup, drop);
+                            v.validateMobile(mobile);
+                            v.validateEmail(email);
+                            v.validateLoc(pickup,drop);
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
@@ -48,6 +51,7 @@ class BookRide {
                             Taxi t = new Mini();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+
                             ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
@@ -72,14 +76,17 @@ class BookRide {
                             String email = br.readLine();
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
-                            Validate v = new Validate(mobile, email);
-                            v.validateMobile(mobile);
-                            v.validateEmail(email);
                             System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            
+                            String pickup = br.readLine();
                             System.out.println("Select Your Drop Point\n");
                             System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");
                             String drop = br.readLine();
+
+                            Validate v = new Validate(mobile, email, pickup, drop);
+                            v.validateMobile(mobile);
+                            v.validateEmail(email);
+                            v.validateLoc(pickup,drop);
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
@@ -88,6 +95,7 @@ class BookRide {
                             Taxi t = new Micro();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+
                             ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
@@ -110,15 +118,17 @@ class BookRide {
                             String email = br.readLine();
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
-                            Validate v = new Validate(mobile, email);
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");  
+                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            String drop = br.readLine();
+
+                            Validate v = new Validate(mobile, email, pickup, drop);
                             v.validateMobile(mobile);
                             v.validateEmail(email);
-                            System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
-
-
+                            v.validateLoc(pickup,drop);
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
@@ -127,6 +137,7 @@ class BookRide {
                             Taxi t = new Sedan();
                             String fare = Integer.toString(t.fare());
                             list.add(new Rider(strDate, name, email, mobile, pickup, drop, fare));
+
                             ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("details.txt"));  
                             out.writeObject(new Rider(strDate, name, email, mobile, pickup, drop, fare));
                             out.flush();
@@ -151,13 +162,17 @@ class BookRide {
                             String email = br.readLine();
                             System.out.println("Enter Your Mobile Number:");
                             String mobile = br.readLine();
-                            Validate v = new Validate(mobile, email);
+                            System.out.println("Enter Your Pickup Point:\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            
+                            String pickup = br.readLine();
+                            System.out.println("Select Your Drop Point\n");
+                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            
+                            String drop = br.readLine();
+
+                            Validate v = new Validate(mobile, email, pickup, drop);
                             v.validateMobile(mobile);
                             v.validateEmail(email);
-                            System.out.println("Enter Your Pickup Point:\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt\n");                            String pickup = br.readLine();
-                            System.out.println("Select Your Drop Point\n");
-                            System.out.println("1.Air Port\n2.Bus Station\n3.Railway Station\n4.Movie Theatre\n5.Restraunt");                            String drop = br.readLine();
+                            v.validateLoc(pickup,drop);
 
                             Date date = new Date();
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
