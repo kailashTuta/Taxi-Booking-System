@@ -21,6 +21,13 @@ class Main {
                 System.out.println("Your Ride details\n");
                 v.rideView();
             } else if (option.equals("3")) {
+                FileWriter fwOb = new FileWriter("details.txt", false);
+                PrintWriter pwOb = new PrintWriter(fwOb, false);
+                pwOb.flush();
+                pwOb.close();
+                fwOb.close();
+
+                System.out.println("Ride Cancelled Successfully");
 
             } else if (option.equals("4")) {
                 System.exit(0);
