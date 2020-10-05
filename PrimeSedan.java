@@ -1,4 +1,4 @@
-class PrimeSedan extends Sedan{
+class PrimeSedan extends Taxi{
 
     public PrimeSedan() {
     }
