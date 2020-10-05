@@ -18,8 +18,14 @@ class Main {
             if (option.equals("1")) {
                 b.bookTaxi();
             } else if (option.equals("2")) {
-                System.out.println("Your Ride details\n");
-                v.rideView();
+                File newFile = new File("details.txt");
+
+                if (newFile.length() == 0) {
+                    System.out.println("You Didn't have any rides to show");
+                } else {
+                    System.out.println("Your Ride details\n");
+                    v.rideView();
+                }
             } else if (option.equals("3")) {
                 FileWriter fwOb = new FileWriter("details.txt", false);
                 PrintWriter pwOb = new PrintWriter(fwOb, false);
